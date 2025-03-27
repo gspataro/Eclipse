@@ -7,30 +7,57 @@
     </head>
 
     <body class="bg-black text-white">
-        <div class="container">
-            <header id="header" class="bg-gray-950 mt-4 p-5 rounded-3xl sticky top-0 group/header">
-                <div class="flex justify-between items-center">
+        <div class="container sticky top-0 z-20">
+            <header id="header" class="bg-gray-900 mt-4 h-20 px-5 rounded-3xl group/header">
+                <div class="h-full flex justify-between items-center">
                     <a href="#" class="text-xl">
                         John Doe
                     </a>
                     <nav>
                         <a href="#" id="hamburger" class="text-4xl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m16 5H4m16 5H4"/></svg>
+                            <svg class="group-data-open/header:hidden" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m16 5H4m16 5H4"/>
+                            </svg>
+                            <svg class="hidden group-data-open/header:block" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414"/>
+                            </svg>
                         </a>
-                        <ul class="hidden group-data-open/header:block">
-                            <li>
-                                About
-                            </li>
-                            <li>
-                                Music
-                            </li>
-                            <li>
-                                Events
-                            </li>
-                            <li>
-                                Contacts
-                            </li>
-                        </ul>
+                        <div class="
+                            invisible
+                            bg-gray-950
+                            w-screen
+                            h-screen
+                            pt-30
+                            fixed
+                            inset-0
+                            -z-10
+                            group-data-open/header:visible
+                            ">
+                            <div class="container">
+                                <ul class="text-xl">
+                                    <li>
+                                        <a href="#" class="block border-gray-900 border-t-1 border-b-1 py-5">
+                                            <span class="text-gray-750">1.</span> About
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block border-gray-900 border-b-1 py-5">
+                                            <span class="text-gray-750">2.</span> Music
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block border-gray-900 border-b-1 py-5">
+                                            <span class="text-gray-750">3.</span> Events
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block border-gray-900 border-b-1 py-5">
+                                            <span class="text-gray-750">4.</span> Contacts
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </header>
