@@ -65,10 +65,36 @@
 @layer components {
     .spotlight {
         clip-path: polygon(77.87% 1px, 94.05% 3px, 86.69% 99.58%, 0.82% 99.06%);
-        @apply bg-gradient-to-b
+        @apply
+            bg-gradient-to-b
             from-amber-400
             via-amber-600/40
             via-50%
             to-amber-400/0;
+    }
+
+    .btn {
+        @apply
+            inline-block
+            bg-white
+            py-3
+            px-8
+            text-black
+            relative
+            xl:after:absolute
+            xl:after:left-8
+            xl:after:right-8
+            xl:after:bottom-2.5
+            xl:after:h-0.5
+            xl:after:bg-black
+            xl:after:scale-x-0
+            xl:after:transition-all
+            xl:after:duration-300
+            xl:after:origin-left;
+    }
+
+    .btn:hover {
+        @apply
+            xl:after:scale-x-100;
     }
 }

@@ -66,24 +66,32 @@
             </div>
         </header>
         <main>
-            <section id="hero" class="w-screen h-screen relative">
-                <!-- SPOT LIGHT -->
-                <div class="bg-black backdrop-blur-3xl absolute w-full h-full block -z-10">
-                    <div class="bg-black/70 backdrop-blur-3xl absolute inset-0 z-10"></div>
-                    <div class="
-                    spotlight
-                    w-3/4
-                    h-full
-                    -z-10
-                    "></div>
+            <section id="hero" class="w-screen h-screen flex flex-col">
+                <div class="relative flex-1">
+                    <!-- SPOT LIGHT -->
+                    <div class="bg-black backdrop-blur-3xl absolute w-full h-full block -z-10">
+                        <div class="bg-black/70 backdrop-blur-3xl absolute inset-0 z-10"></div>
+                        <div class="
+                        spotlight
+                        w-3/4
+                        h-full
+                        -z-10
+                        "></div>
+                    </div>
+                    <!-- END SPOT LIGHT -->
+                    <div class="w-full h-full flex flex-col items-center justify-center">
+                        <div class="text-lg">NEW ALBUM</div>
+                        <h1 class="mb-8">ECLIPSE</h1>
+                        <a href="#" class="btn">
+                            LISTEN NOW
+                        </a>
+                    </div>
                 </div>
-                <!-- END SPOT LIGHT -->
-                <div class="w-full h-full flex flex-col items-center justify-center">
-                    <div class="text-lg">NEW ALBUM</div>
-                    <h1 class="mb-8">ECLIPSE</h1>
-                    <a href="#" class="bg-white py-4 px-10 text-black font-bold">
-                        LISTEN NOW
-                    </a>
+                <div class="flex flex-col items-center pb-4">
+                    <svg class="animate-bounce" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m12 20l6-6m-6 6l-6-6m6 6V9.5M12 4v2.5"/></svg>
+                    <div class="text-sm mt-2">
+                        SCROLL DOWN
+                    </div>
                 </div>
             </section>
         </main>
