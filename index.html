@@ -24,6 +24,10 @@
                         </a>
                         <div class="
                             invisible
+                            scale-0
+                            origin-top-right
+                            transition-all
+                            duration-400
                             bg-gray-950
                             w-screen
                             h-screen
@@ -32,11 +36,14 @@
                             inset-0
                             -z-10
                             group-data-open/header:visible
+                            group-data-open/header:scale-100
                             xl:visible
                             xl:contents
                             xl:static
+                            xl:scale-none
+                            xl:transition-none
                             ">
-                            <div class="container xl:contents">
+                            <div class="invisible container group-data-open/header:visible xl:contents xl:visible">
                                 <ul class="text-xl xl:flex xl:gap-5 xl:text-lg">
                                     <li>
                                         <a href="#" class="block border-gray-900 border-t-1 border-b-1 py-5 xl:border-0 xl:p-0">
