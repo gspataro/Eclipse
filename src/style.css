@@ -26,6 +26,11 @@
     padding-inline: 1rem;
 }
 
-@utility polygon {
-    clip-path: polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
+@utility spotlight {
+    clip-path: polygon(77.87% 1px, 94.05% 3px, 86.69% 99.58%, 0.82% 99.06%);
+    @apply bg-gradient-to-b
+        from-amber-400
+        via-amber-600/40
+        via-50%
+        to-amber-400/0;
 }

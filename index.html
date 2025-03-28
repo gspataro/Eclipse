@@ -8,7 +8,7 @@
 
     <body class="bg-black text-white">
         <header id="header" class="container fixed top-0 left-1/2 -translate-x-1/2 z-20 group/header">
-            <div class="bg-gray-900 mt-4 h-20 px-5 rounded-3xl">
+            <div class="bg-gray-900/80 mt-4 h-20 px-5 rounded-3xl">
                 <div class="h-full flex justify-between items-center">
                     <a href="#" class="text-xl">
                         John Doe
@@ -67,22 +67,17 @@
         </header>
         <main>
             <section id="hero" class="w-screen h-screen relative">
-                <div class="
-                    absolute
-                    right-1/20
-                    polygon
-                    bg-gradient-to-r
-                    from-amber-400
-                    via-amber-400/30
-                    via-75%
-                    to-amber-400/0
-                    w-300
-                    h-100
-                    rotate-120
-                    inset-shadow-white
-                    shadow-2xl
+                <!-- SPOT LIGHT -->
+                <div class="bg-black backdrop-blur-3xl absolute w-full h-full block -z-10">
+                    <div class="bg-black/70 backdrop-blur-3xl absolute inset-0 z-10"></div>
+                    <div class="
+                    spotlight
+                    w-3/4
+                    h-full
                     -z-10
                     "></div>
+                </div>
+                <!-- END SPOT LIGHT -->
                 <div class="w-full h-full flex flex-col items-center justify-center">
                     <div class="text-2xl">NEW ALBUM</div>
                     <h1 class="mb-8 text-6xl">ECLIPSE</h1>
