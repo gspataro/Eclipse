@@ -105,6 +105,7 @@
             px-8
             text-black
             relative
+            cursor-pointer
             xl:after:absolute
             xl:after:left-8
             xl:after:right-8
