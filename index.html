@@ -8,7 +8,16 @@
 
     <body class="bg-black text-white">
         <header id="header" class="container fixed top-0 left-1/2 -translate-x-1/2 z-20 group/header">
-            <div class="bg-gray-900/80 border-1 border-gray-900 mt-4 h-20 px-5 rounded-3xl">
+            <div class="bg-gray-900/80
+                backdrop-blur-lg
+                border-1
+                border-gray-900
+                mt-4
+                h-20
+                px-5
+                rounded-3xl
+                group-data-open/header:backdrop-blur-none
+                xl:group-data-open/header:backdrop-blur-lg">
                 <div class="h-full flex justify-between items-center">
                     <a href="#" class="text-xl">
                         John Doe
@@ -167,9 +176,9 @@
             </section>
             <footer class="py-40">
                 <div class="container">
-                    <div class="mb-40 flex flex-col justify-center items-center">
+                    <div class="mb-40 flex flex-col lg:justify-center lg:items-center">
                         <h2 class="mb-3">Newsletter</h2>
-                        <p class="text-center text-xl mb-8">Be a part of the community, keep updated with our latest news</p>
+                        <p class="text-xl mb-8 lg:text-center">Be a part of the community, keep updated with our latest news</p>
                         <div class="w-full max-w-80 flex gap-2 relative group">
                             <input type="email" placeholder="your@email.com" class="
                                 h-12
