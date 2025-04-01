@@ -123,6 +123,48 @@
             xl:after:scale-x-100;
     }
 
+    .cta {
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='m184.49 136.49l-80 80a12 12 0 0 1-17-17L159 128L87.51 56.49a12 12 0 1 1 17-17l80 80a12 12 0 0 1-.02 17'/%3E%3C/svg%3E");
+
+        @apply
+            inline-flex
+            items-center
+            gap-1
+            py-3
+            text-current
+            relative
+            cursor-pointer
+            font-semibold
+            xl:before:absolute
+            xl:before:left-0
+            xl:before:right-6
+            xl:before:bottom-2.5
+            xl:before:h-0.5
+            xl:before:bg-current
+            xl:before:scale-x-0
+            xl:before:transition-all
+            xl:before:duration-300
+            xl:before:origin-left
+            xl:after:w-5
+            xl:after:h-5
+            xl:after:bg-current
+            xl:after:[mask-image:var(--svg)]
+            xl:after:[-webkit-mask-image:var(--svg)]
+            xl:after:[mask-repeat:no-repeat]
+            xl:after:[-webkit-mask-repeat:no-repeat]
+            xl:after:[mask-size:100%_100%]
+            xl:after:[-webkit-mask-size:100%_100%]
+            xl:after:-mt-0.5
+            xl:after:duration-300;
+    }
+
+    .cta:hover {
+        @apply
+            xl:before:scale-x-100
+            xl:after:-mr-1.5
+            xl:after:ml-1.5;
+    }
+
     .tgbar {
         @apply
             overflow-x-hidden
