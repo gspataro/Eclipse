@@ -108,7 +108,7 @@
 
 @layer components {
     .spotlight {
-        clip-path: polygon(87% 0%, 100% 10%, 85% 100%, 0% 100%);
+        clip-path: polygon(100% 0%, 100% 15%, 50% 100%, 0% 100%, 0 50%, 85% 0);
         @apply
             bg-gradient-to-b
             from-amber-400
@@ -118,7 +118,7 @@
     }
 
     .spotlight--reverse {
-        clip-path: polygon(13% 0%, 0% 10%, 15% 100%, 100% 100%);
+        clip-path: polygon(0 15%, 0 0, 15% 0, 100% 60%, 100% 100%, 60% 100%);
     }
 
     .btn {
