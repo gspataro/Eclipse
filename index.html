@@ -82,14 +82,14 @@
             </div>
         </header>
         <main>
-            <section id="hero" class="w-screen h-screen flex flex-col">
-                <div class="relative flex-1">
+            <section id="hero" class="w-screen h-screen flex flex-col relative">
+                <div class="flex-1">
                     <!-- SPOT LIGHT -->
                     <div class="bg-black backdrop-blur-3xl absolute w-full h-full block -z-10 overflow-hidden">
                         <div class="bg-black/70 backdrop-blur-3xl absolute inset-0 z-10"></div>
                         <div class="
                         spotlight
-                        w-3/4
+                        w-full
                         h-full
                         -z-10
                         absolute
@@ -97,6 +97,28 @@
                         origin-top-right
                         rotate-0
                         animate-lamp-swing
+                        "></div>
+                        <div class="
+                        spotlight
+                        spotlight--reverse
+                        w-full
+                        h-full
+                        -z-10
+                        absolute
+                        -top-18
+                        origin-top-left
+                        rotate-0
+                        animate-lamp-swing
+                        "></div>
+                        <div class="
+                        h-40
+                        bg-linear-to-t
+                        from-black/70
+                        to-black/0
+                        w-full
+                        absolute
+                        bottom-0
+                        z-0
                         "></div>
                     </div>
                     <!-- END SPOT LIGHT -->
