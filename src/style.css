@@ -159,6 +159,17 @@
             relative
             cursor-pointer
             font-semibold
+            after:w-5
+            after:h-5
+            after:bg-current
+            after:[mask-image:var(--svg)]
+            after:[-webkit-mask-image:var(--svg)]
+            after:[mask-repeat:no-repeat]
+            after:[-webkit-mask-repeat:no-repeat]
+            after:[mask-size:100%_100%]
+            after:[-webkit-mask-size:100%_100%]
+            after:-mt-0.5
+            after:duration-300
             xl:before:absolute
             xl:before:left-0
             xl:before:right-6
@@ -168,18 +179,7 @@
             xl:before:scale-x-0
             xl:before:transition-all
             xl:before:duration-300
-            xl:before:origin-left
-            xl:after:w-5
-            xl:after:h-5
-            xl:after:bg-current
-            xl:after:[mask-image:var(--svg)]
-            xl:after:[-webkit-mask-image:var(--svg)]
-            xl:after:[mask-repeat:no-repeat]
-            xl:after:[-webkit-mask-repeat:no-repeat]
-            xl:after:[mask-size:100%_100%]
-            xl:after:[-webkit-mask-size:100%_100%]
-            xl:after:-mt-0.5
-            xl:after:duration-300;
+            xl:before:origin-left;
     }
 
     .cta:hover {
