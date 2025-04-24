@@ -191,7 +191,7 @@
 
     .tgbar {
         @apply
-            overflow-x-hidden
+            overflow-hidden
             flex
             gap-2
             whitespace-nowrap;
